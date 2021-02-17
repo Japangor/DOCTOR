@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_medium">
+
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="10:00AM"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:background="@drawable/btn_rect_white_overlay"/>
+
+
+
+</RelativeLayout>

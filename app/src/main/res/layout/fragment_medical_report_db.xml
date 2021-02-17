@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MedicalReport_db_Fragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medical_record_recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/medical_record_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_demo_child_count="10"
+            app:shimmer_demo_layout="@layout/shimmer_card_item_medical_record"
+            app:shimmer_demo_layout_manager_type="linear_vertical"
+            app:shimmer_demo_angle="20"/>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        android:clickable="true"
+        app:elevation="6dp"
+        app:borderWidth="0dp"
+        app:backgroundTint="@color/blue_grey_900"/>
+
+
+</RelativeLayout>

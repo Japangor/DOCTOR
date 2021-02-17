@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_5"
+    tools:context=".activity.Profile.EditProfileActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/light_green_600"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/close"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_chevron_left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_mlarge"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/photo_female_6"/>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_circle_gray_3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/get_profilepic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        app:fabSize="mini"
+                        android:layout_centerInParent="true"
+                        app:backgroundTint="@color/light_green_600"
+                        app:srcCompat="@drawable/ic_create"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Full Name"
+                android:minHeight="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/location"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Location"
+                android:minHeight="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large">
+
+
+                <EditText
+                    android:id="@+id/contactnumber"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:hint="Contact Number"
+                    android:minHeight="45dp"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+                <EditText
+                    android:id="@+id/emergency_phone"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:hint="Emergency Contact"
+                    android:inputType="phone"
+                    android:minHeight="45dp"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emailid"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:minHeight="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                >
+
+                <EditText
+                    android:id="@+id/gender"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:drawableEnd="@drawable/ic_expand_arrow"
+                    android:drawableRight="@drawable/ic_expand_arrow"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Gender"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+                <EditText
+                    android:id="@+id/birth_date"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:drawableEnd="@drawable/ic_calender"
+                    android:drawableRight="@drawable/ic_calender"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Date Of Birth"
+                    android:paddingLeft="@dimen/spacing_middle" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/marital_status"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Marital Status"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/bloog_grp"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Blood Group"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                >
+
+                <EditText
+                    android:id="@+id/height"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:hint="Height(In Cm)"
+                    android:minHeight="45dp"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+
+                <EditText
+                    android:id="@+id/weight"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:hint="Weight(In Kg)"
+                    android:minHeight="45dp"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/smokinghabbits"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Smoking Habbits"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+
+            <EditText
+                android:id="@+id/alcohol_cunsumption"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Alcohol Consumption"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/food"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Food Preferences"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <EditText
+                android:id="@+id/activitylevel"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Food Preferences"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+            <Button
+                android:id="@+id/bt_submit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/btn_rect_green"
+                android:text="SUBMIT"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

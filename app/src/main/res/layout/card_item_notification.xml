@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/indexnum"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_disc"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/NotificationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationTitle"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/NotificationDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationDesc"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_10"/>
+
+</LinearLayout>

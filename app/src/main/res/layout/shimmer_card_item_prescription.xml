@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/diseases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/spacing_large"
+                android:text="Prescription 1"
+                android:background="@color/grey_9"
+                android:textSize="20dp"
+                android:textColor="@color/grey_9"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed, 05 FEB 20, 09:50 AM"
+                android:textSize="15dp"
+                android:background="@color/grey_9"
+                android:textColor="@color/grey_9"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_9"
+                android:background="@color/grey_9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by "
+                    android:textColor="@color/grey_9"/>
+                <TextView
+                    android:id="@+id/doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ashok Shinde"
+                    android:textColor="@color/grey_9"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/view_prescription"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="View"
+            android:textColor="@color/grey_9"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/grey_9"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_10"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

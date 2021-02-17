@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_5dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="@dimen/size_8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/intro_img"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="&#xf017;"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/grey_40"
+                android:fontFamily="@font/fontawesome" />
+
+            <View
+                android:layout_width="@dimen/size_10dp"
+                android:layout_height="@dimen/size_0dp"/>
+
+            <TextView
+                android:id="@+id/BookingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020/20/8"
+                android:textSize="@dimen/size_12dp"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_20"
+            android:layout_marginVertical="@dimen/size_5dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/DispensaryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dispensary Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/getLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="@dimen/size_30dp"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_round_directions_24"/>
+            <View
+                android:layout_width="@dimen/size_10dp"
+                android:layout_height="@dimen/size_0dp"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/getAppointmentDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="@dimen/size_30dp"
+                app:srcCompat="@drawable/ic_round_touch_app_24"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SlotTime"/>
+                <TextView
+                    android:id="@+id/SlotTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EstimateTime"/>
+                <TextView
+                    android:id="@+id/EstimateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09:00 AM"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Status"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay In Clinic"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purpose"/>
+                <TextView
+                    android:id="@+id/PurposeOfVisit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Test"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

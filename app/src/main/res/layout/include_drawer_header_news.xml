@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/material_bg_1" />
+
+    <ImageView
+        android:id="@+id/pt_pic"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/doctoricon"
+        android:layout_centerHorizontal="false"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/pt_pic"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pt_name"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Dr. Ashok Shinde" />
+
+        <TextView
+            android:id="@+id/pt_contact"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 9999999999"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

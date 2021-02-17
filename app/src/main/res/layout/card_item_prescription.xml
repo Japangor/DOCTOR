@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/card">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/PrescriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PrescriptionTitle"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:gravity="center_vertical|start"/>
+
+            <TextView
+                android:id="@+id/PrescriptionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PrescriptionTitle"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:gravity="center_vertical|end"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/PatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PatientName"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:gravity="center_vertical|start"/>
+
+            <TextView
+                android:id="@+id/DoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DoctorName"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:gravity="center_vertical|end"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginHorizontal="15dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Diagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/diagnosis"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"
+            android:background="@color/transparent"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_record"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="end|center_vertical"
+            android:text="@string/view_medical_record"
+            android:textColor="@color/colorAccent"
+            android:clickable="true"
+            android:background="@color/transparent"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_10"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

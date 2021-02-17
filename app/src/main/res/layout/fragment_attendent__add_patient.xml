@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_5"
+    tools:context=".Attendent.Fragment.Attendent_AddPatient_Fragment">
+
+    <EditText
+        android:id="@+id/search_bar"
+        style="@style/EditText.Flat.Grey"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_round_bg_white"
+        android:hint="Search Patient"
+        android:drawableEnd="@drawable/ic_round_search_24"
+        android:drawableTint="@color/grey_60"
+        android:minHeight="45dp"
+        android:layout_margin="@dimen/spacing_middle"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:paddingRight="@dimen/spacing_middle"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/search_bar"
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addpatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/spacing_large"
+    android:paddingVertical="@dimen/spacing_xmedium">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_large">
+
+        <TextView
+            android:id="@+id/dispensary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nida Homoeopathic Dispensary"
+            android:textColor="@color/blue_900"
+            android:textSize="15dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/getdirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View On Map"
+            android:textColor="@color/white"
+            android:paddingHorizontal="@dimen/spacing_xmedium"
+            android:background="@drawable/btn_rect_blue"
+            />
+
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/time_slots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_demo_child_count="15"
+            app:shimmer_demo_grid_child_count="4"
+            app:shimmer_demo_layout="@layout/card_item_time_slots"
+            app:shimmer_demo_layout_manager_type="grid"
+            app:shimmer_demo_angle="20"/>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_20"
+        android:layout_marginTop="@dimen/spacing_large"/>
+
+
+</LinearLayout>
