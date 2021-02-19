@@ -46,6 +46,7 @@ public class AppointmentSlotListAdapter extends RecyclerView.Adapter<Appointment
         holder.DispensaryName.setText(appointmentListModel.getDispensaryName());
         holder.SlotTime.setText(appointmentListModel.getSlotTime());
         holder.PurposeOfVisit.setText(appointmentListModel.getPurposeOfVisit());
+        holder.PatientName.setText(appointmentListModel.getPatientName());
 
         holder.getLocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +73,7 @@ public class AppointmentSlotListAdapter extends RecyclerView.Adapter<Appointment
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView BookingDate,DispensaryName,SlotTime,EstimateTime,PurposeOfVisit;
+        TextView BookingDate,DispensaryName,SlotTime,EstimateTime,PurposeOfVisit,PatientName;
         FloatingActionButton getLocation;
 
         public ViewHolder(@NonNull View itemView) {
@@ -81,6 +82,8 @@ public class AppointmentSlotListAdapter extends RecyclerView.Adapter<Appointment
             getLocation=itemView.findViewById(R.id.getLocation);
             BookingDate=itemView.findViewById(R.id.BookingDate);
             DispensaryName=itemView.findViewById(R.id.DispensaryName);
+            PatientName=itemView.findViewById(R.id.PatientName);
+
             SlotTime=itemView.findViewById(R.id.SlotTime);
             EstimateTime=itemView.findViewById(R.id.EstimateTime);
             PurposeOfVisit=itemView.findViewById(R.id.PurposeOfVisit);

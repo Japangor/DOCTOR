@@ -46,6 +46,8 @@ public class AppointmentTokenListAdapter extends RecyclerView.Adapter<Appointmen
 
         holder.BookingDate.setText(appointmentListModel.getBookingDate());
         holder.DispensaryName.setText(appointmentListModel.getDispensaryName());
+        holder.PatientName.setText(appointmentListModel.getPatientName());
+
         holder.TokenNo.setText(appointmentListModel.getTokenNo());
         holder.EstimateTime.setText(appointmentListModel.getEstimateTime());
         holder.PurposeOfVisit.setText(appointmentListModel.getPurposeOfVisit());
@@ -75,7 +77,7 @@ public class AppointmentTokenListAdapter extends RecyclerView.Adapter<Appointmen
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView BookingDate,DispensaryName,TokenNo,EstimateTime,PurposeOfVisit;
+        TextView BookingDate,DispensaryName,TokenNo,EstimateTime,PurposeOfVisit,PatientName;
         FloatingActionButton getLocation;
 
         public ViewHolder(@NonNull View itemView) {
@@ -83,6 +85,8 @@ public class AppointmentTokenListAdapter extends RecyclerView.Adapter<Appointmen
 
             getLocation=itemView.findViewById(R.id.getLocation);
             BookingDate=itemView.findViewById(R.id.BookingDate);
+            PatientName=itemView.findViewById(R.id.PatientName);
+
             DispensaryName=itemView.findViewById(R.id.DispensaryName);
             TokenNo=itemView.findViewById(R.id.TokenNo);
             EstimateTime=itemView.findViewById(R.id.EstimateTime);

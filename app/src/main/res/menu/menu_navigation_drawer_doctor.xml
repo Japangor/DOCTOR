@@ -31,10 +31,10 @@
             android:icon="@drawable/ic_settings"
             android:title="Settings" />
 
-        <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/ic_share"
-            android:title="Share" />
+<!--        <item-->
+<!--            android:id="@+id/nav_share"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Share" />-->
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_help"

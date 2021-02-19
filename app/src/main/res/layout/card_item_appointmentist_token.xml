@@ -64,7 +64,15 @@
                 android:textSize="@dimen/size_15dp"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"/>
-
+            <TextView
+                android:id="@+id/PatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/getLocation"
                 android:layout_width="wrap_content"
